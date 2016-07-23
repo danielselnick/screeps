@@ -1,5 +1,5 @@
 module.exports = {
-    roleId : 0,    
+    roleId : 0,
     /** @param {Creep} creep **/
     run: function(creep) {
 
