@@ -1,5 +1,5 @@
 var roleUpgrader = {
-
+    roleId : 1,
     /** @param {Creep} creep **/
     run: function(creep) {
         Memory.constants.upgrader.role = 1;

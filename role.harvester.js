@@ -1,4 +1,7 @@
 var roleHarvester = {
+    parts: [ CARRY, WORK, MOVE],
+    roleId : 0,
+    
     /** @param {Creep} creep **/
     run: function(creep) {
 

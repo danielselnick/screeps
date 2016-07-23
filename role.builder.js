@@ -1,5 +1,5 @@
 var roleBuilder = {
-
+    roleId: 2,
     /** @param {Creep} creep **/
     run: function(creep) {
         Memory.constants.harvester.role = 2;
