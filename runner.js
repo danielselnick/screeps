@@ -2,11 +2,10 @@ var creeps = require('creeps');
 var structures = require('structures');
 var rooms = require('rooms');
 
-var runner = {
+module.exports = {
     run : function(game) {
         creeps.run(game.creeps);
         structures.run(game.structures);
         rooms.run(game.rooms);
     }
 };
-module.exports = runner;

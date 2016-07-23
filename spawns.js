@@ -1,4 +1,5 @@
-var spawns = {
-
+module.exports = {
+    run : function(spawns) {
+        
+    }
 };
-module.exports = spawns;

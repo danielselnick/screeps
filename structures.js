@@ -1,6 +1,5 @@
-var structures = {
+module.exports = {
     run : function run(structures) {
         
     }
 };
-module.exports = structures;

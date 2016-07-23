@@ -1,6 +1,5 @@
-var rooms = {
+module.exports = {
     run: function(rooms) {
         
     }
 };
-module.exports = rooms;

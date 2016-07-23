@@ -2,7 +2,7 @@ var roleHarvester = require('role.harvester');
 var roleUpgrader = require('role.upgrader');
 var roleBuilder = require('role.builder');
 
-var creeps = {
+module.exports = {
     run: function(gameCreeps) {
         for(var name in gameCreeps) {
             var creep = gameCreeps[name];
@@ -18,4 +18,3 @@ var creeps = {
         }
     }
 };
-module.exports = creeps;

@@ -1,4 +1,4 @@
-var roleHarvester = {
+module.exports = {
     parts: [ CARRY, WORK, MOVE],
     roleId : 0,
     
@@ -28,5 +28,3 @@ var roleHarvester = {
         }
 	}
 };
-
-module.exports = roleHarvester;
