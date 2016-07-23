@@ -5,10 +5,6 @@ var memory = require('memory');
 var room = require('room');
 
 module.exports.loop = function () {
-
-    Creep.prototype.hello = function() {
-        console.log('hello');
-    };
     var tower = Game.getObjectById('TOWER_ID');
     if(tower) {
         var closestDamagedStructure = tower.pos.findClosestByRange(FIND_STRUCTURES, {
@@ -27,7 +23,6 @@ module.exports.loop = function () {
         var creep = Game.creeps[name];
         if(creep.memory.role == memory.roles.harvester) {
             roleHarvester.run(creep);
-            creep.hello();
         }
         if(creep.memory.role == memory.roles.upgrader) {
             roleUpgrader.run(creep);
