@@ -1,7 +1,7 @@
-var roleHarvester = require('roleHarvester');
+var roleHarvester = require('harvester');
 
 module.exports = {
     run : function(spawner) {
-        spawner.
+        
     }
 };
