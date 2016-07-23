@@ -1,8 +1,3 @@
-var roleHarvester = require('role.harvester');
-var roleUpgrader = require('role.upgrader');
-var roleBuilder = require('role.builder');
-var memory = require('memory');
-var room = require('room');
 var runner = require('runner');
 
 module.exports.loop = function () {
