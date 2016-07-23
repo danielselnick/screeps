@@ -6,13 +6,13 @@ module.exports = {
     run: function(gameCreeps) {
         for(var name in gameCreeps) {
             var creep = gameCreeps[name];
-            if(creep.memory.role == harvester.roleId) {
+            if(creep.memory.roleId == harvester.roleId) {
                 harvester.run(creep);
             }
-            else if(creep.memory.role == upgrader.roleId) {
+            else if(creep.memory.roleId == upgrader.roleId) {
                 upgrader.run(creep);
             }
-            else if(creep.memory.role == builder.roleId) {
+            else if(creep.memory.roleId == builder.roleId) {
                 builder.run(creep);
             }
         }
