@@ -1,10 +1,10 @@
 var roleHarvester = {
-    hello: function () {
-        console.log('hi');
+    createNew: function() {
+
     }
     /** @param {Creep} creep **/
     , run: function(creep) {
-        Memory.constants.harvester.role = 0;
+        
 	    if(creep.carry.energy < creep.carryCapacity) {
             var sources = creep.room.find(FIND_SOURCES);
             if(creep.harvest(sources[0]) == ERR_NOT_IN_RANGE) {
