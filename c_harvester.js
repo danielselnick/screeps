@@ -1,5 +1,6 @@
+var gs = require('global_constants');
 module.exports = {
-    roleId : 0,
+    roleId: gs.harvester.roleId,
     /** @param {Creep} creep **/
     run: function(creep) {
 

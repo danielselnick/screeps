@@ -1,5 +1,7 @@
+var gs = require('global_constants');
+
 module.exports = {
-    roleId: 2,
+    roleId: gs.builder.roleId,
     /** @param {Creep} creep **/
     run: function(creep) {
         Memory.constants.harvester.role = 2;

@@ -1,5 +1,6 @@
+var gs = require('global_constants');
 module.exports = {
-    roleId : 1,
+    roleId: gs.upgrader.roleId,
     /** @param {Creep} creep **/
     run: function(creep) {
         if(creep.memory.upgrading && creep.carry.energy == 0) {
