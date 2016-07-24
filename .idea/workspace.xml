@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f12bc06-dfcb-4b06-a284-819d91841c9b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/s_spawns.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/s_spawner.js" afterPath="$PROJECT_DIR$/s_spawner.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/s_tower.js" afterPath="$PROJECT_DIR$/s_tower.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/c_harvester.js" afterPath="$PROJECT_DIR$/c_harvester.js" />
     </list>
     <ignored path="screeps.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="c_harvester.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="c_harvester.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/c_harvester.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="79" selection-start-line="14" selection-start-column="79" selection-end-line="14" selection-end-column="79" />
+            <state relative-caret-position="270">
+              <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -98,11 +96,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="s_tower.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="s_tower.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/s_tower.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+            <state relative-caret-position="180">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -131,6 +129,7 @@
         <option value="$PROJECT_DIR$/s_main.js" />
         <option value="$PROJECT_DIR$/s_spawner.js" />
         <option value="$PROJECT_DIR$/s_tower.js" />
+        <option value="$PROJECT_DIR$/c_harvester.js" />
       </list>
     </option>
   </component>
@@ -264,7 +263,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1469347590525</updated>
-      <workItem from="1469347591987" duration="1645000" />
+      <workItem from="1469347591987" duration="1764000" />
     </task>
     <task id="LOCAL-00001" summary="Update all the things!">
       <created>1469348847342</created>
@@ -287,11 +286,18 @@
       <option name="project" value="LOCAL" />
       <updated>1469349238765</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="addconsts">
+      <created>1469349359993</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1469349359993</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1645000" />
+    <option name="totallyTimeSpent" value="1764000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -330,7 +336,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="Update all the things!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update all the things!" />
+    <MESSAGE value="addconsts" />
+    <option name="LAST_COMMIT_MESSAGE" value="addconsts" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -374,14 +381,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c_harvester.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="79" selection-start-line="14" selection-start-column="79" selection-end-line="14" selection-end-column="79" />
           <folding />
         </state>
       </provider>
@@ -452,8 +451,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/s_tower.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+        <state relative-caret-position="180">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c_harvester.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
           <folding />
         </state>
       </provider>
