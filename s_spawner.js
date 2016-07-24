@@ -1,4 +1,4 @@
-var harvester = require('harvester');
+var harvester = require('c_harvester');
 
 module.exports = {
     run : function(spawner) {
