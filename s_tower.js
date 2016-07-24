@@ -1,4 +1,5 @@
 module.exports = {
+    structureType: STRUCTURE_TOWER,
     run : function ( towers ) {
         var tower = Game.getObjectById('TOWER_ID');
     
