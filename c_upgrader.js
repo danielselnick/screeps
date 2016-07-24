@@ -2,7 +2,6 @@ module.exports = {
     roleId : 1,
     /** @param {Creep} creep **/
     run: function(creep) {
-        Memory.constants.upgrader.role = 1;
         if(creep.memory.upgrading && creep.carry.energy == 0) {
             creep.memory.upgrading = false;
 	    }
