@@ -1,6 +1,6 @@
-var creeps = require('creeps');
-var structures = require('structures');
-var rooms = require('rooms');
+var creeps = require('c_main');
+var structures = require('s_main');
+var rooms = require('r_main');
 
 module.exports = {
     run : function(game) {
