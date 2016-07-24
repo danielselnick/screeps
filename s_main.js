@@ -12,7 +12,7 @@ module.exports = {
             console.log(name);
             var structure = structures[name];
             var structureType = structure.structureType;
-            this.roles[structureType]();
+            this.roles[structureType](structure);
         }
     }
 };

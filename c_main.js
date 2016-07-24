@@ -14,7 +14,7 @@ module.exports = {
         for(var name in gameCreeps) {
             var creep = gameCreeps[name];
             var roleId = creep.memory.roleId;
-            this.roles[roledId]();
+            this.roles[roleId](creep);
         }
     }
 };
