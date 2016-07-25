@@ -8,8 +8,8 @@ module.exports = {
     },
     run : function(spawner) {
         "use strict";
-        for (var role in gs.creepRoles) {
-            this.spawn(spawner, gs[role]);
+        for (var i = 0, l = gs.creepRoles.length; i < l; i++) {
+            this.spawn(spawner, gs.creepRoles[i]);
         }
     }
 };
