@@ -14,7 +14,6 @@ module.exports = {
     run : function run(structures) {
         this.initialize();
         for(var name in structures) {
-            console.log(name);
             var structure = structures[name];
             var structureType = structure.structureType;
             this.roles[structureType](structure);
