@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1f12bc06-dfcb-4b06-a284-819d91841c9b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/s_spawner.js" afterPath="$PROJECT_DIR$/s_spawner.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/c_builder.js" afterPath="$PROJECT_DIR$/c_builder.js" />
     </list>
     <ignored path="screeps.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="c_builder.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="c_builder.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/c_builder.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+            <state relative-caret-position="75">
+              <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -106,11 +106,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="s_spawner.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="s_spawner.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/s_spawner.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="12" column="107" selection-start-line="12" selection-start-column="107" selection-end-line="12" selection-end-column="107" />
+              <caret line="12" column="104" selection-start-line="12" selection-start-column="104" selection-end-line="12" selection-end-column="104" />
               <folding />
             </state>
           </provider>
@@ -147,12 +147,12 @@
         <option value="$PROJECT_DIR$/s_main.js" />
         <option value="$PROJECT_DIR$/c_controller.js" />
         <option value="$PROJECT_DIR$/constants.js" />
-        <option value="$PROJECT_DIR$/c_builder.js" />
         <option value="$PROJECT_DIR$/c_harvester.js" />
         <option value="$PROJECT_DIR$/c_main.js" />
         <option value="$PROJECT_DIR$/c_upgrader.js" />
         <option value="$PROJECT_DIR$/global_constants.js" />
         <option value="$PROJECT_DIR$/s_spawner.js" />
+        <option value="$PROJECT_DIR$/c_builder.js" />
       </list>
     </option>
   </component>
@@ -286,7 +286,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1469347590525</updated>
-      <workItem from="1469347591987" duration="4571000" />
+      <workItem from="1469347591987" duration="4649000" />
     </task>
     <task id="LOCAL-00001" summary="Update all the things!">
       <created>1469348847342</created>
@@ -379,11 +379,18 @@
       <option name="project" value="LOCAL" />
       <updated>1469404889351</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fix issue">
+      <created>1469405110175</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1469405110175</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4571000" />
+    <option name="totallyTimeSpent" value="4649000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -548,14 +555,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/c_builder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/global_constants.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -567,7 +566,15 @@
     <entry file="file://$PROJECT_DIR$/s_spawner.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="107" selection-start-line="12" selection-start-column="107" selection-end-line="12" selection-end-column="107" />
+          <caret line="12" column="104" selection-start-line="12" selection-start-column="104" selection-end-line="12" selection-end-column="104" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c_builder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
           <folding />
         </state>
       </provider>
