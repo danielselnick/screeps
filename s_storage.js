@@ -1,7 +1,7 @@
 var gs = require('global_constants');
 
 module.exports = {
-    structureType: STRUCTURE_,
+    structureType: STRUCTURE_STORAGE,
     run: function (structure) {
         "use strict";
 
