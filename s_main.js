@@ -17,7 +17,6 @@ module.exports = {
         wall: require('s_wall')
     },
     run : function run(structures) {
-        this.initialize();
         for(var name in structures) {
             var structure = structures[name];
             var structureType = structure.structureType;
