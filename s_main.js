@@ -1,4 +1,4 @@
-var spawner = require('s_spawner');
+var spawner = require('s_spawn');
 var tower = require('s_tower');
 var controller = require('s_controller');
 var extension = require('s_extension');
