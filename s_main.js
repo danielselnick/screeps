@@ -1,33 +1,27 @@
-var container = require('s_container');
-var controller = require('s_controller');
-var extension = require('s_extension');
-var extractor = require('s_extractor');
-var lab = require('s_lab');
-var link = require('s_link');
-var nuker = require('s_nuker');
-var observer = require('s_observer');
-var rampart = require('s_rampart');
-var road = require('s_road');
-var spawn = require('s_spawn');
-var storage = require('s_storage');
-var terminal = require('s_terminal');
-var tower = require('s_tower');
-var wall = require('s_wall');
-
 module.exports = {
-    roles: {},
-    initialize: function() {
-        this.roles[spawn.structureType] = spawn.run;
-        this.roles[tower.structureType] = tower.run;
-        this.roles[controller.structureType] = controller.run;
-        this.roles[extension.structureType] = extension.run;
+    roles: {
+        container: require('s_container'),
+        controller: require('s_controller'),
+        extension: require('s_extension'),
+        extractor: require('s_extractor'),
+        lab: require('s_lab'),
+        link: require('s_link'),
+        nuker: require('s_nuker'),
+        observer: require('s_observer'),
+        rampart: require('s_rampart'),
+        road: require('s_road'),
+        spawn: require('s_spawn'),
+        storage: require('s_storage'),
+        terminal: require('s_terminal'),
+        tower: require('s_tower'),
+        wall: require('s_wall')
     },
     run : function run(structures) {
         this.initialize();
         for(var name in structures) {
             var structure = structures[name];
             var structureType = structure.structureType;
-            this.roles[structureType](structure);
+            this.roles[structureType].run(structure);
         }
     }
 };
