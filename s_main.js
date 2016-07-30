@@ -1,5 +1,5 @@
 module.exports = {
-    roles: {
+    structures: {
         container: require('s_container'),
         controller: require('s_controller'),
         extension: require('s_extension'),
@@ -20,7 +20,7 @@ module.exports = {
         for(var name in structures) {
             var structure = structures[name];
             var structureType = structure.structureType;
-            this.roles[structureType].run(structure);
+            this.structures[structureType].run(structure);
         }
     }
 };

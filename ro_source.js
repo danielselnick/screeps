@@ -1,3 +1,9 @@
-/**
- * Created by dselnick on 7/26/16.
- */
+module.exports = {
+    requires: {
+        messageBus: require('message_bus')
+    },
+    run: function (roomObject) {
+        "use strict";
+
+    }
+};
