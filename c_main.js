@@ -4,9 +4,9 @@ var builder = require('c_builder');
 
 module.exports = {
     creeps: {
-        builder: require('c_builder'),
-        harvester: require('c_harvester'),
-        upgrader: require('c_upgrader')
+        2: require('c_builder'),
+        0: require('c_harvester'),
+        1: require('c_upgrader')
     },
     run: function(gameCreeps) {
         for(var name in gameCreeps) {
