@@ -1,6 +1,7 @@
 "use strict";
 module.exports = {
     requests: [],
+    creeps: [],
     log: function (x) {
         console.log(JSON.stringify(x));
     },
@@ -24,7 +25,7 @@ module.exports = {
         }
     },
     harvest: function (request) {
-        console.log('harvest func');
+
     },
     source: function (source) {
         var request = {
@@ -41,7 +42,8 @@ module.exports = {
             //console.log("missing structure type from object.");
         }
     }, creep: function (creep) {
-
+        creeps.push(creep);
+        console.log(creep);
     }, spawn: function (spawn) {
 
     }, extension: function (ext) {
