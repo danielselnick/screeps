@@ -19,7 +19,12 @@ module.exports = {
         this.log(source);
     }, structure: function (structure) {
         this.log(structure);
-        this[structure.structureType](structure);
+        var structureType = structure.structureType;
+        if (structureType) {
+            this[structure.structureType](structure);
+        } else {
+            console.log("missing structure type from ");
+        }
     }, creep: function (creep) {
         this.log(creep);
     }, spawn: function (spawn) {
