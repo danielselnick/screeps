@@ -9,5 +9,6 @@ module.exports.loop = function () {
             var obj = objects[i];
             f[obj.type](obj);
         }
+        f.goThroughAllRequests();
     }
 }

@@ -20,11 +20,13 @@ module.exports = {
     goThroughAllRequests: function () {
         for (var i = 0, len = this.requests.length; i < len; i++) {
             var request = this.requests[i];
-            console.log(request.type);
+            this[request.type](request);
         }
     },
+    harvest: function (request) {
+        console.log('harvest func');
+    },
     source: function (source) {
-        this.log(source);
         var request = {
             sender: source,
             senderType: source,
