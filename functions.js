@@ -3,7 +3,7 @@ module.exports = {
         "use strict";
         var areaObjects = room.lookAtArea(0, 0, 49, 49, true);
         var objects = [];
-        for (var i in areaObjects) {
+        for (var i = 0, len = areaObjects.length; i < len; i++) {
             var obj = areaObjects[i];
             if (obj.type === "terrain") {
                 break;
@@ -12,5 +12,5 @@ module.exports = {
             }
         }
         return objects;
-    }
+    },
 };
