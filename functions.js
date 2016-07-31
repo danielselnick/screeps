@@ -1,5 +1,6 @@
 "use strict";
 module.exports = {
+    requests: [],
     log: function (x) {
         console.log(JSON.stringify(x));
     },
@@ -15,8 +16,21 @@ module.exports = {
             }
         }
         return objects;
-    }, source: function (source) {
-
+    },
+    goThroughAllRequests: function () {
+        for (var i = 0, len = this.requests.length; i < len; i++) {
+            var request = this.requests[i];
+            console.log(request.type);
+        }
+    },
+    source: function (source) {
+        this.log(source);
+        var request = {
+            sender: source,
+            senderType: source,
+            type: "harvest",
+        };
+        this.requests.push(request);
     }, structure: function (structure) {
         var structureType = structure.structureType;
         if (structureType) {
