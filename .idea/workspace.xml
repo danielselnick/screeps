@@ -40,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/functions.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="24" column="60" selection-start-line="24" selection-start-column="60" selection-end-line="24" selection-end-column="60" />
+              <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -258,7 +258,7 @@
       <workItem from="1469566621201" duration="3072000" />
       <workItem from="1469642237247" duration="4918000" />
       <workItem from="1469864183648" duration="5498000" />
-      <workItem from="1470004320151" duration="2785000" />
+      <workItem from="1470004320151" duration="2806000" />
     </task>
     <task id="LOCAL-00001" summary="Update all the things!">
       <created>1469348847342</created>
@@ -484,11 +484,18 @@
       <option name="project" value="LOCAL" />
       <updated>1470007240594</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="remove logging">
+      <created>1470007843907</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1470007843907</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24111000" />
+    <option name="totallyTimeSpent" value="24132000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="838" height="1050" extended-state="0" />
@@ -533,7 +540,6 @@
     <MESSAGE value="add creep for upgrading controller" />
     <MESSAGE value="Add global constants for a central configuration of sorts." />
     <MESSAGE value="fix issue" />
-    <MESSAGE value="remove logging" />
     <MESSAGE value="add modules&#10;" />
     <MESSAGE value="Fix missing structure type" />
     <MESSAGE value="refactor" />
@@ -542,7 +548,8 @@
     <MESSAGE value="logging&#10;" />
     <MESSAGE value="more funcs" />
     <MESSAGE value="missing structure type?" />
-    <option name="LAST_COMMIT_MESSAGE" value="missing structure type?" />
+    <MESSAGE value="remove logging" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove logging" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -883,7 +890,7 @@
     <entry file="file://$PROJECT_DIR$/functions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="24" column="60" selection-start-line="24" selection-start-column="60" selection-end-line="24" selection-end-column="60" />
+          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
           <folding />
         </state>
       </provider>

@@ -22,7 +22,7 @@ module.exports = {
         if (structureType) {
             this[structure.structureType](structure);
         } else {
-            console.log("missing structure type from object.");
+            //console.log("missing structure type from object.");
         }
     }, creep: function (creep) {
 
