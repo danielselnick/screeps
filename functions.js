@@ -42,7 +42,7 @@ module.exports = {
             //console.log("missing structure type from object.");
         }
     }, creep: function (creep) {
-        creeps.push(creep);
+        this.creeps.push(creep);
         console.log(creep);
     }, spawn: function (spawn) {
 
