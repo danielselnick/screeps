@@ -5,8 +5,9 @@ module.exports.loop = function () {
     for (var name in Game.rooms) {
         var room = Game.rooms[name];
         var objects = f.getAllObjectsInRoom(room);
-        for (var obj in objects) {
-            console.log(obj.type);
+        for (var i = 0, len = objects.length; i < len; i++) {
+            var obj = objects[i];
+            f[obj.type](obj);
         }
     }
 }

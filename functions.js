@@ -12,5 +12,11 @@ module.exports = {
             }
         }
         return objects;
-    },
+    }, source: function (source) {
+        "use strict";
+        console.log(Object.getOwnPropertyNames(source));
+    }, structure: function (structure) {
+        "use strict";
+        console.log(Object.getOwnPropertyNames(structure));
+    }
 };

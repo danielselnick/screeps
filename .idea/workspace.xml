@@ -2,43 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f12bc06-dfcb-4b06-a284-819d91841c9b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functions.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/action.harvest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/action.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/c_builder.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/c_harvester.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/c_main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/c_upgrader.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/global_constants.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jsconfig.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/message.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/message_bus.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/r_main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ro_constructionSite.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ro_flag.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ro_mineral.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ro_resource.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ro_source.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/room.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runner.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/s_container.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/s_controller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/s_extension.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/s_extractor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/s_lab.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/s_link.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/s_main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/s_nuker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/s_observer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/s_rampart.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/s_road.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/s_spawn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/s_storage.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/s_terminal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/s_tower.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/s_wall.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/workScheduler.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.js" afterPath="$PROJECT_DIR$/functions.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.js" afterPath="$PROJECT_DIR$/main.js" />
     </list>
     <ignored path="screeps.iws" />
@@ -62,21 +27,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+            <state relative-caret-position="135">
+              <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functions.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="functions.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/functions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+            <state relative-caret-position="105">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -294,7 +259,7 @@
       <workItem from="1469566621201" duration="3072000" />
       <workItem from="1469642237247" duration="4918000" />
       <workItem from="1469864183648" duration="5498000" />
-      <workItem from="1470004320151" duration="634000" />
+      <workItem from="1470004320151" duration="1198000" />
     </task>
     <task id="LOCAL-00001" summary="Update all the things!">
       <created>1469348847342</created>
@@ -478,11 +443,25 @@
       <option name="project" value="LOCAL" />
       <updated>1469866181841</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="fix">
+      <created>1470005028195</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1470005028195</updated>
+    </task>
+    <task id="LOCAL-00028" summary="change loop style">
+      <created>1470005397961</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1470005397961</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21960000" />
+    <option name="totallyTimeSpent" value="22524000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -532,7 +511,8 @@
     <MESSAGE value="Fix missing structure type" />
     <MESSAGE value="refactor" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="change loop style" />
+    <option name="LAST_COMMIT_MESSAGE" value="change loop style" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -862,18 +842,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/functions.js">
+    <entry file="file://$PROJECT_DIR$/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="135">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.js">
+    <entry file="file://$PROJECT_DIR$/functions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
