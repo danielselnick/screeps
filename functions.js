@@ -14,8 +14,8 @@ module.exports = {
         console.log(JSON.stringify(x));
     },
     initializeData: function () {
-        if (!Memory.requests) {
-            Memory.requests = [];
+        if (_.isUndefined(Memory.requests)) {
+            Memory.requests = this.requests;
         } else {
             this.requests = Memory.requests.slice(0);
         }
