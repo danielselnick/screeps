@@ -1,9 +1,27 @@
 "use strict";
+var _ = require('lodash');
 module.exports = {
-    requests: [],
-    creeps: [],
+    c: {
+        harvestersPerSource: 4
+    },
+    requests: {
+        spawnCreep: [],
+        harvest: [],
+    },
+    myCreeps: [],
+    hostileCreeps: [],
     log: function (x) {
         console.log(JSON.stringify(x));
+    },
+    initializeData: function () {
+        if (!Memory.requests) {
+            Memory.requests = [];
+        } else {
+            this.requests = Memory.requests.slice(0);
+        }
+    },
+    goThroughAllRequests: function () {
+
     },
     getAllObjectsInRoom: function (room) {
         var areaObjects = room.lookAtArea(0, 0, 49, 49, true);
@@ -18,69 +36,109 @@ module.exports = {
         }
         return objects;
     },
-    goThroughAllRequests: function () {
-        for (var i = 0, len = this.requests.length; i < len; i++) {
-            var request = this.requests[i];
-            this[request.type](request);
+    source: function (source) {
+        if (!source.memory.harvesters) {
+            source.memory.harvesters = [];
+        } else if (source.memory.harvesters.length < this.c.harvestersPerSource
+            && !source.memory.hasSpawnRequest) {
+            this.requests.spawnCreep.push({
+                creepType: "harvester",
+                source: source
+            });
+            source.memory.hasSpawnRequest = true;
         }
     },
-    harvest: function (request) {
-
-    },
-    source: function (source) {
-        var request = {
-            sender: source,
-            senderType: source,
-            type: "harvest",
-        };
-        this.requests.push(request);
-    }, structure: function (structure) {
+    structure: function (structure) {
         var structureType = structure.structureType;
         if (structureType) {
             this[structure.structureType](structure);
         } else {
             //console.log("missing structure type from object.");
         }
-    }, creep: function (creep) {
-        this.creeps.push(creep);
-        console.log(creep);
-    }, spawn: function (spawn) {
+    },
+    creep: function (creep) {
+        if (creep.my) {
+            this.myCreeps.push(creep);
+        } else {
+            this.hostileCreeps.push(creep);
+            // Handle hostile later
+            return;
+        }
 
-    }, extension: function (ext) {
+    },
+    spawn: function (spawn) {
+        var length = this.requests.spawnCreep.length;
+        if (length < 1) {
+            return;
+        }
+        var request = this.requests.spawnCreep[0];
+        var result = this[request.creepType](spawn, request);
+        if (result > 0) {
+            this.requests.spawnCreep.shift();
+        }
+    },
+    harvester: function (spawn, request) {
+        var result = spawn.createCreep([WORK, CARRY, MOVE]);
+        if (_.isString(result)) {
+            request.source.harvesters.push(result);
+            request.source.hasSpawnRequest = false;
+            return 1;
+        } else {
+            return result;
+        }
+    },
+    extension: function (ext) {
 
-    }, road: function (road) {
+    },
+    road: function (road) {
 
-    }, constructedWall: function (wall) {
+    },
+    constructedWall: function (wall) {
 
-    }, rampart: function (rampart) {
+    },
+    rampart: function (rampart) {
 
-    }, keeperLair: function (kl) {
+    },
+    keeperLair: function (kl) {
 
-    }, portal: function (portal) {
+    },
+    portal: function (portal) {
 
-    }, controller: function (controller) {
+    },
+    controller: function (controller) {
 
-    }, link: function (link) {
+    },
+    link: function (link) {
 
-    }, storage: function (storage) {
+    },
+    storage: function (storage) {
 
-    }, tower: function (tower) {
+    },
+    tower: function (tower) {
 
-    }, observer: function (observer) {
+    },
+    observer: function (observer) {
 
-    }, powerBank: function (pb) {
+    },
+    powerBank: function (pb) {
 
-    }, powerSpawn: function (ps) {
+    },
+    powerSpawn: function (ps) {
 
-    }, extractor: function (extractor) {
+    },
+    extractor: function (extractor) {
 
-    }, lab: function (lab) {
+    },
+    lab: function (lab) {
 
-    }, terminal: function (terminal) {
+    },
+    terminal: function (terminal) {
 
-    }, container: function (container) {
+    },
+    container: function (container) {
 
-    }, nuker: function (nuker) {
+    },
+    nuker: function (nuker) {
 
     }
 };
