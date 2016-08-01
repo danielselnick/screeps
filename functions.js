@@ -21,7 +21,7 @@ module.exports = {
         }
     },
     extendGame: function () {
-        if (!Source.prototype.memory) {
+        if (_.isUndefined(Source.prototype.memory)) {
             Object.defineProperty(Source.prototype, 'memory', {
                 get: function () {
                     if (_.isUndefined(Memory.sources)) {
@@ -43,7 +43,6 @@ module.exports = {
                 }
             });
         }
-
     },
     getAllObjectsInRoom: function (room) {
         var areaObjects = room.lookAtArea(0, 0, 49, 49, true);
