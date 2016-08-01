@@ -59,10 +59,9 @@ module.exports = {
             source.memory.harvesters = [];
         }
         if (_.isUndefined(source.memory.totalHarvesterSlots)) {
-            var terrain = source.room.lookForAtArea(LOOK_TERRAIN, source.x - 1, source.y - 1, source.x + 1, source.y + 1, true);
+            var terrain = source.room.lookAtArea(source.x - 1, source.y - 1, source.x + 1, source.y + 1, true);
             this.log(terrain);
         }
-        // ToDo: figure out # of harvesters for a source
         if (source.memory.harvesters.length < source.memory.totalHarvesterSlots
             && !source.memory.hasSpawnRequest) {
             this.requests.spawnCreep.push({
