@@ -72,14 +72,14 @@ module.exports = {
     structure: function (structure) {
         var structureType = structure.structureType;
         if (structureType) {
-            this[structure.structureType](structure);
+            this[structure.structureType](structure[structure.structureType]);
         } else {
             //console.log("missing structure type from object.");
         }
     },
     source: function (source) {
         //this.log(source);
-        if (!source.memory.harvesters) {
+        if (_.isUndefined(source.memory.harvesters)) {
             source.memory.harvesters = [];
         }
         if (source.memory.harvesters.length < this.c.harvestersPerSource
