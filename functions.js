@@ -76,7 +76,7 @@ module.exports = {
         }
     },
     source: function (source) {
-        this.log(source);
+        //this.log(source);
         if (!source.memory.harvesters) {
             source.memory.harvesters = [];
         }

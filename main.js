@@ -4,6 +4,7 @@ module.exports.loop = function () {
     var f = require('functions');
     console.log('start');
     f.extendGame();
+
     for (var name in Game.rooms) {
         var room = Game.rooms[name];
         var objects = f.getAllObjectsInRoom(room);
