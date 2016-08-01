@@ -21,26 +21,29 @@ module.exports = {
         }
     },
     extendGame: function () {
-        Object.defineProperty(Source.prototype, 'memory', {
-            get: function () {
-                if (_.isUndefined(Memory.sources)) {
-                    Memory.sources = {};
+        if (!Source.prototype.memory) {
+            Object.defineProperty(Source.prototype, 'memory', {
+                get: function () {
+                    if (_.isUndefined(Memory.sources)) {
+                        Memory.sources = {};
+                    }
+                    if (!_.isObject(Memory.sources)) {
+                        return undefined;
+                    }
+                    return Memory.sources[this.id] = Memory.sources[this.id] || {};
+                },
+                set: function (value) {
+                    if (_.isUndefined(Memory.sources)) {
+                        Memory.sources = {};
+                    }
+                    if (!_.isObject(Memory.sources)) {
+                        throw new Error('Could not set source memory');
+                    }
+                    Memory.sources[this.id] = value;
                 }
-                if (!_.isObject(Memory.sources)) {
-                    return undefined;
-                }
-                return Memory.sources[this.id] = Memory.sources[this.id] || {};
-            },
-            set: function (value) {
-                if (_.isUndefined(Memory.sources)) {
-                    Memory.sources = {};
-                }
-                if (!_.isObject(Memory.sources)) {
-                    throw new Error('Could not set source memory');
-                }
-                Memory.sources[this.id] = value;
-            }
-        });
+            });
+        }
+
     },
     getAllObjectsInRoom: function (room) {
         var areaObjects = room.lookAtArea(0, 0, 49, 49, true);
