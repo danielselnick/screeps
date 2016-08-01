@@ -17,7 +17,7 @@ module.exports = {
         if (_.isUndefined(Memory.requests)) {
             Memory.requests = this.requests;
         } else {
-            this.requests = Memory.requests.slice(0);
+            this.requests = Memory.requests;
         }
     },
     getAllObjectsInRoom: function (room) {
