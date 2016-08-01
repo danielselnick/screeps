@@ -20,8 +20,27 @@ module.exports = {
             this.requests = Memory.requests.slice(0);
         }
     },
-    goThroughAllRequests: function () {
-
+    extendGame: function () {
+        Object.defineProperty(Source.prototype, 'memory', {
+            get: function () {
+                if (_.isUndefined(Memory.sources)) {
+                    Memory.sources = {};
+                }
+                if (!_.isObject(Memory.sources)) {
+                    return undefined;
+                }
+                return Memory.sources[this.id] = Memory.sources[this.id] || {};
+            },
+            set: function (value) {
+                if (_.isUndefined(Memory.sources)) {
+                    Memory.sources = {};
+                }
+                if (!_.isObject(Memory.sources)) {
+                    throw new Error('Could not set source memory');
+                }
+                Memory.sources[this.id] = value;
+            }
+        });
     },
     getAllObjectsInRoom: function (room) {
         var areaObjects = room.lookAtArea(0, 0, 49, 49, true);
@@ -36,26 +55,6 @@ module.exports = {
         }
         return objects;
     },
-    source: function (source) {
-        if (!source.memory.harvesters) {
-            source.memory.harvesters = [];
-        } else if (source.memory.harvesters.length < this.c.harvestersPerSource
-            && !source.memory.hasSpawnRequest) {
-            this.requests.spawnCreep.push({
-                creepType: "harvester",
-                source: source
-            });
-            source.memory.hasSpawnRequest = true;
-        }
-    },
-    structure: function (structure) {
-        var structureType = structure.structureType;
-        if (structureType) {
-            this[structure.structureType](structure);
-        } else {
-            //console.log("missing structure type from object.");
-        }
-    },
     creep: function (creep) {
         if (creep.my) {
             this.myCreeps.push(creep);
@@ -65,6 +64,28 @@ module.exports = {
             return;
         }
 
+    },
+    structure: function (structure) {
+        var structureType = structure.structureType;
+        if (structureType) {
+            this[structure.structureType](structure);
+        } else {
+            //console.log("missing structure type from object.");
+        }
+    },
+    source: function (source) {
+        this.log(source);
+        if (!source.memory.harvesters) {
+            source.memory.harvesters = [];
+        }
+        if (source.memory.harvesters.length < this.c.harvestersPerSource
+            && !source.memory.hasSpawnRequest) {
+            this.requests.spawnCreep.push({
+                creepType: "harvester",
+                source: source
+            });
+            source.memory.hasSpawnRequest = true;
+        }
     },
     spawn: function (spawn) {
         var length = this.requests.spawnCreep.length;
