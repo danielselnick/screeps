@@ -33,6 +33,7 @@ module.exports = {
         }
         return objects;
     },
+    // The different types of objects that are in the room
     creep: function (creep) {
         if (creep.my) {
             this.myCreeps.push(creep);
@@ -53,7 +54,6 @@ module.exports = {
     },
     source: function (source) {
         //this.log(source);
-        source = source.source;
         if (_.isUndefined(source.memory.harvesters)) {
             source.memory.harvesters = [];
         }
@@ -78,6 +78,7 @@ module.exports = {
         }
     },
     harvester: function (spawn, request) {
+
         var result = spawn.createCreep([WORK, CARRY, MOVE]);
         if (_.isString(result)) {
             request.source.harvesters.push(result);
@@ -145,7 +146,6 @@ module.exports = {
         if (_.isUndefined(Source.prototype.memory)) {
             Object.defineProperty(Source.prototype, 'memory', {
                 get: function () {
-                    console.log('getmemory');
                     if (_.isUndefined(Memory.sources)) {
                         Memory.sources = {};
                     }
@@ -155,7 +155,6 @@ module.exports = {
                     return Memory.sources[this.id] = Memory.sources[this.id] || {};
                 },
                 set: function (value) {
-                    console.log('setmemory');
                     if (_.isUndefined(Memory.sources)) {
                         Memory.sources = {};
                     }

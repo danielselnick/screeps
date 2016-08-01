@@ -11,7 +11,8 @@ module.exports.loop = function () {
         var objects = f.getAllObjectsInRoom(room);
         for (var i = 0, len = objects.length; i < len; i++) {
             var obj = objects[i];
-            f[obj.type](obj);
+            // Invoke a function by the same name, and dereference the object
+            f[obj.type](obj[obj.type]);
         }
     }
 }
