@@ -20,32 +20,6 @@ module.exports = {
             this.requests = Memory.requests.slice(0);
         }
     },
-    extendGame: function () {
-        if (_.isUndefined(Source.prototype.memory)) {
-            Object.defineProperty(Source.prototype, 'memory', {
-                get: function () {
-                    console.log('getmemory');
-                    if (_.isUndefined(Memory.sources)) {
-                        Memory.sources = {};
-                    }
-                    if (!_.isObject(Memory.sources)) {
-                        return undefined;
-                    }
-                    return Memory.sources[this.id] = Memory.sources[this.id] || {};
-                },
-                set: function (value) {
-                    console.log('setmemory');
-                    if (_.isUndefined(Memory.sources)) {
-                        Memory.sources = {};
-                    }
-                    if (!_.isObject(Memory.sources)) {
-                        throw new Error('Could not set source memory');
-                    }
-                    Memory.sources[this.id] = value;
-                }
-            });
-        }
-    },
     getAllObjectsInRoom: function (room) {
         var areaObjects = room.lookAtArea(0, 0, 49, 49, true);
         var objects = [];
@@ -79,6 +53,7 @@ module.exports = {
     },
     source: function (source) {
         //this.log(source);
+        source = source.source;
         if (_.isUndefined(source.memory.harvesters)) {
             source.memory.harvesters = [];
         }
@@ -165,5 +140,31 @@ module.exports = {
     },
     nuker: function (nuker) {
 
+    },
+    extendGame: function () {
+        if (_.isUndefined(Source.prototype.memory)) {
+            Object.defineProperty(Source.prototype, 'memory', {
+                get: function () {
+                    console.log('getmemory');
+                    if (_.isUndefined(Memory.sources)) {
+                        Memory.sources = {};
+                    }
+                    if (!_.isObject(Memory.sources)) {
+                        return undefined;
+                    }
+                    return Memory.sources[this.id] = Memory.sources[this.id] || {};
+                },
+                set: function (value) {
+                    console.log('setmemory');
+                    if (_.isUndefined(Memory.sources)) {
+                        Memory.sources = {};
+                    }
+                    if (!_.isObject(Memory.sources)) {
+                        throw new Error('Could not set source memory');
+                    }
+                    Memory.sources[this.id] = value;
+                }
+            });
+        }
     }
 };
