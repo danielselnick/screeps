@@ -7,6 +7,7 @@ module.exports = {
     requests: {
         spawnCreep: [],
         harvest: [],
+        requestors: []
     },
     myCreeps: [],
     hostileCreeps: [],
@@ -57,13 +58,17 @@ module.exports = {
         if (_.isUndefined(source.memory.harvesters)) {
             source.memory.harvesters = [];
         }
-        if (source.memory.harvesters.length < this.c.harvestersPerSource
+        if (_.isUndefined(source.memory.totalHarvesterSlots)) {
+            var terrain = source.room.lookForAtArea(LOOK_TERRAIN, source.x - 1, source.y - 1, source.x + 1, source.y + 1, true);
+            this.log(terrain);
+        }
+        // ToDo: figure out # of harvesters for a source
+        if (source.memory.harvesters.length < source.memory.totalHarvesterSlots
             && !source.memory.hasSpawnRequest) {
             this.requests.spawnCreep.push({
                 creepType: "harvester",
-                source: source
+                senderId: source.id
             });
-            source.memory.hasSpawnRequest = true;
         }
     },
     spawn: function (spawn) {
@@ -80,8 +85,8 @@ module.exports = {
     harvester: function (spawn, request) {
         var result = spawn.createCreep([WORK, CARRY, MOVE]);
         if (_.isString(result)) {
-            request.source.harvesters.push(result);
-            request.source.hasSpawnRequest = false;
+            var source = Game.getObjectById([request.senderId]);
+            source.memory.hasSpawnRequest = false;
             return 1;
         } else {
             return result;

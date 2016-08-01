@@ -39,8 +39,18 @@
       <file leaf-file-name="functions.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/functions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="49" column="51" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
+            <state relative-caret-position="285">
+              <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Room.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../ScreepsAutocomplete/Room.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="841">
+              <caret line="336" column="4" selection-start-line="336" selection-start-column="4" selection-end-line="336" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -305,14 +315,7 @@
       <workItem from="1469566621201" duration="3072000" />
       <workItem from="1469642237247" duration="4918000" />
       <workItem from="1469864183648" duration="5498000" />
-      <workItem from="1470004320151" duration="10702000" />
-    </task>
-    <task id="LOCAL-00001" summary="Update all the things!">
-      <created>1469348847342</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1469348847342</updated>
+      <workItem from="1470004320151" duration="12037000" />
     </task>
     <task id="LOCAL-00002" summary="Update all the things!">
       <created>1469348956654</created>
@@ -650,11 +653,18 @@
       <option name="project" value="LOCAL" />
       <updated>1470031743491</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="fix">
+      <created>1470031932693</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1470031932695</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32028000" />
+    <option name="totallyTimeSpent" value="33363000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="919" height="1050" extended-state="0" />
@@ -902,6 +912,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="72" column="4" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -909,13 +920,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ScreepsAutocomplete/Room.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2955">
-          <caret line="313" column="53" selection-start-line="313" selection-start-column="53" selection-end-line="313" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -1057,10 +1061,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../ScreepsAutocomplete/Room.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="841">
+          <caret line="336" column="4" selection-start-line="336" selection-start-column="4" selection-end-line="336" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/functions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="49" column="51" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
+        <state relative-caret-position="285">
+          <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
           <folding />
         </state>
       </provider>
