@@ -24,6 +24,7 @@ module.exports = {
         if (_.isUndefined(Source.prototype.memory)) {
             Object.defineProperty(Source.prototype, 'memory', {
                 get: function () {
+                    console.log('getmemory');
                     if (_.isUndefined(Memory.sources)) {
                         Memory.sources = {};
                     }
@@ -33,6 +34,7 @@ module.exports = {
                     return Memory.sources[this.id] = Memory.sources[this.id] || {};
                 },
                 set: function (value) {
+                    console.log('setmemory');
                     if (_.isUndefined(Memory.sources)) {
                         Memory.sources = {};
                     }
