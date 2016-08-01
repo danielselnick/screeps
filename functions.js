@@ -47,7 +47,7 @@ module.exports = {
     structure: function (structure) {
         var structureType = structure.structureType;
         if (structureType) {
-            this[structure.structureType](structure[structure.structureType]);
+            this[structure.structureType](structure);
         } else {
             //console.log("missing structure type from object.");
         }
@@ -78,7 +78,6 @@ module.exports = {
         }
     },
     harvester: function (spawn, request) {
-
         var result = spawn.createCreep([WORK, CARRY, MOVE]);
         if (_.isString(result)) {
             request.source.harvesters.push(result);

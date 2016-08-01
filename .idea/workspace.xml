@@ -4,7 +4,6 @@
     <list default="true" id="1f12bc06-dfcb-4b06-a284-819d91841c9b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.js" afterPath="$PROJECT_DIR$/functions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.js" afterPath="$PROJECT_DIR$/main.js" />
     </list>
     <ignored path="screeps.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,8 +39,8 @@
       <file leaf-file-name="functions.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/functions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+            <state relative-caret-position="345">
+              <caret line="49" column="51" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -123,8 +122,8 @@
         <option value="$PROJECT_DIR$/ro_constructionSite.js" />
         <option value="$PROJECT_DIR$/room.js" />
         <option value="$PROJECT_DIR$/gameObjects.js" />
-        <option value="$PROJECT_DIR$/functions.js" />
         <option value="$PROJECT_DIR$/main.js" />
+        <option value="$PROJECT_DIR$/functions.js" />
       </list>
     </option>
   </component>
@@ -306,7 +305,7 @@
       <workItem from="1469566621201" duration="3072000" />
       <workItem from="1469642237247" duration="4918000" />
       <workItem from="1469864183648" duration="5498000" />
-      <workItem from="1470004320151" duration="10544000" />
+      <workItem from="1470004320151" duration="10702000" />
     </task>
     <task id="LOCAL-00001" summary="Update all the things!">
       <created>1469348847342</created>
@@ -644,11 +643,18 @@
       <option name="project" value="LOCAL" />
       <updated>1470031089328</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="fix">
+      <created>1470031743491</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1470031743491</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31870000" />
+    <option name="totallyTimeSpent" value="32028000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="919" height="1050" extended-state="0" />
@@ -696,7 +702,6 @@
     <MESSAGE value="add modules&#10;" />
     <MESSAGE value="Fix missing structure type" />
     <MESSAGE value="refactor" />
-    <MESSAGE value="fix" />
     <MESSAGE value="change loop style" />
     <MESSAGE value="logging&#10;" />
     <MESSAGE value="more funcs" />
@@ -704,7 +709,8 @@
     <MESSAGE value="remove logging" />
     <MESSAGE value="Add requests loop" />
     <MESSAGE value="harvest func" />
-    <option name="LAST_COMMIT_MESSAGE" value="harvest func" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1053,8 +1059,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/functions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+        <state relative-caret-position="345">
+          <caret line="49" column="51" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
           <folding />
         </state>
       </provider>
