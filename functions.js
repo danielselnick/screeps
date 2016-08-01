@@ -59,7 +59,8 @@ module.exports = {
             source.memory.harvesters = [];
         }
         if (_.isUndefined(source.memory.totalHarvesterSlots)) {
-            var terrain = source.room.lookAtArea(source.pos.x - 1, source.pos.y - 1, source.pos.x + 1, source.pos.y + 1, true);
+            var top, left, bottom, right
+            var terrain = source.room.lookAtArea(source.pos.y - 1, source.pos.x - 1, source.pos.y + 1, source.pos.x + 1, true);
             this.log(terrain);
         }
         if (source.memory.harvesters.length < source.memory.totalHarvesterSlots

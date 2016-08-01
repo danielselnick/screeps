@@ -39,8 +39,8 @@
       <file leaf-file-name="functions.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/functions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="63" column="9" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+            <state relative-caret-position="315">
+              <caret line="65" column="79" selection-start-line="65" selection-start-column="79" selection-end-line="65" selection-end-column="79" />
               <folding />
             </state>
           </provider>
@@ -49,7 +49,7 @@
       <file leaf-file-name="Room.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../ScreepsAutocomplete/Room.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1205">
+            <state relative-caret-position="320">
               <caret line="289" column="4" selection-start-line="289" selection-start-column="4" selection-end-line="289" selection-end-column="4" />
               <folding />
             </state>
@@ -347,14 +347,7 @@
       <workItem from="1469566621201" duration="3072000" />
       <workItem from="1469642237247" duration="4918000" />
       <workItem from="1469864183648" duration="5498000" />
-      <workItem from="1470004320151" duration="12421000" />
-    </task>
-    <task id="LOCAL-00004" summary="addconsts">
-      <created>1469349359993</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1469349359993</updated>
+      <workItem from="1470004320151" duration="12570000" />
     </task>
     <task id="LOCAL-00005" summary="addconsts">
       <created>1469349467614</created>
@@ -692,11 +685,18 @@
       <option name="project" value="LOCAL" />
       <updated>1470033432262</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="fix">
+      <created>1470033865860</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1470033865860</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33747000" />
+    <option name="totallyTimeSpent" value="33896000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="919" height="1050" extended-state="0" />
@@ -1102,7 +1102,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../ScreepsAutocomplete/Room.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1205">
+        <state relative-caret-position="320">
           <caret line="289" column="4" selection-start-line="289" selection-start-column="4" selection-end-line="289" selection-end-column="4" />
           <folding />
         </state>
@@ -1110,8 +1110,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/functions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="63" column="9" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+        <state relative-caret-position="315">
+          <caret line="65" column="79" selection-start-line="65" selection-start-column="79" selection-end-line="65" selection-end-column="79" />
           <folding />
         </state>
       </provider>
