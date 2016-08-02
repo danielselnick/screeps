@@ -59,8 +59,12 @@ module.exports = {
             source.memory.harvesters = [];
         }
         if (_.isUndefined(source.memory.totalHarvesterSlots)) {
-            var terrain = source.room.lookAtArea(source.pos.y - 1, source.pos.x - 1, source.pos.y + 1, source.pos.x + 1, true);
-            this.log(terrain);
+            var terrains = source.room.lookAtArea(source.pos.y - 1, source.pos.x - 1, source.pos.y + 1, source.pos.x + 1, true);
+            var available = _.filter(terrains, function (t) {
+                return t.terrain == "plain";
+            });
+            this.log(available);
+            // ToDo: continue with having a source request harvesters to fill the available slots
         }
         if (source.memory.harvesters.length < source.memory.totalHarvesterSlots
             && !source.memory.hasSpawnRequest) {
