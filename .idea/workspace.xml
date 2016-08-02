@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1f12bc06-dfcb-4b06-a284-819d91841c9b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.js" afterPath="$PROJECT_DIR$/functions.js" />
     </list>
     <ignored path="screeps.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/functions.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
-              <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+              <caret line="67" column="9" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -348,14 +347,7 @@
       <workItem from="1469642237247" duration="4918000" />
       <workItem from="1469864183648" duration="5498000" />
       <workItem from="1470004320151" duration="13067000" />
-      <workItem from="1470110698999" duration="418000" />
-    </task>
-    <task id="LOCAL-00007" summary="Add structure controller">
-      <created>1469349717861</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1469349717861</updated>
+      <workItem from="1470110698999" duration="424000" />
     </task>
     <task id="LOCAL-00008" summary="add creep for upgrading">
       <created>1469350183179</created>
@@ -693,11 +685,18 @@
       <option name="project" value="LOCAL" />
       <updated>1470034086177</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="fix">
+      <created>1470118706540</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1470118706541</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34811000" />
+    <option name="totallyTimeSpent" value="34817000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -891,7 +890,7 @@
     <entry file="file://$PROJECT_DIR$/functions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
-          <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+          <caret line="67" column="9" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
           <folding />
         </state>
       </provider>
